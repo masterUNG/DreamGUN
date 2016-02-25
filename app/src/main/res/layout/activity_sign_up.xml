@@ -20,7 +20,8 @@
         android:layout_height="wrap_content"
         android:text="@string/save"
         android:id="@+id/button3"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:onClick="clickSaveData" />
 
     <ScrollView
         android:layout_width="match_parent"
