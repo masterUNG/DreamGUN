@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Dream Gun</string>
+
+    <string name="user">User :</string>
+    <string name="pass">Password :</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="name">Name :</string>
+    <string name="email">Email :</string>
+    <string name="birth">Birth :</string>
+    <string name="country">Country :</string>
+
 </resources>
