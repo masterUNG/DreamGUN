@@ -2,6 +2,7 @@ package appewtc.masterung.dreamgun;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -34,6 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
         passwordEditText = (EditText) findViewById(R.id.editText4);
         nameEditText = (EditText) findViewById(R.id.editText5);
         emailEditText = (EditText) findViewById(R.id.editText6);
+        birthDatePicker = (DatePicker) findViewById(R.id.datePicker);
 
     }   // bindWidget
 
@@ -53,6 +55,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         } else {
             //No Space
+            getValueFromDatePicker();
 
 
         }   // if
@@ -60,6 +63,16 @@ public class SignUpActivity extends AppCompatActivity {
 
 
     }   // clickSaveData
+
+    private void getValueFromDatePicker() {
+
+        int intDay = birthDatePicker.getDayOfMonth();
+        int intMonth = birthDatePicker.getMonth() + 1; // 1 ==> Jan
+        int intYear = birthDatePicker.getYear();
+
+        Log.d("25Feb", "birth ==> " + intDay + "/" + intMonth + "/" + intYear);
+
+    }   // getValueFromDataPicker
 
     private boolean checkSpace() {
 
